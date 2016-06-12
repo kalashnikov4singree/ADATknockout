@@ -81,7 +81,7 @@ body{
     left: 0;
     z-index: 1030;
     border-radius: inherit;
-    padding-top: 25px;
+    padding-top: 17px;
 }
 .header .navbar .navbar-brand{
     color: #fff;
@@ -175,8 +175,12 @@ body{
 .full-screen-img .secondary-text{
     font-size: 24px;
 }
+.content-inner-page{
+    padding-top: 94px;
+}
 .help-block{
     padding: 48px 0 36px ;
+    margin: inherit;
 }
 .help-block .item {
     margin-bottom: 10px;
@@ -192,12 +196,40 @@ body{
     margin-bottom: 25px;
     margin-top: 30px;
 }
+.content-inner-page .help-block .content-block{
+    line-height: 2.3;
+}
 .what-is-block{
     font-weight: 300;
 }
 .what-is-block .item {
     padding-top: 70px;
     padding-bottom: 45px;
+}
+.what-is-block .item .begin-text{
+    margin-bottom: 40px;
+}
+.what-is-block .item .item-text{
+    position: relative;
+    margin-bottom: 20px;
+}
+.what-is-block .item .item-text .check{
+    font-size: 24px;
+    color: #02a7e4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1;
+}
+.what-is-block .item .item-text .check-text{
+    margin-left: 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 300;
+    padding-top: 3px;
+}
+.what-is-block .item .item-text .check-text b{
+    font-weight: 400;
 }
 .what-is-block .item .content-block{
     color: #495966;
@@ -212,6 +244,9 @@ body{
 }
 .what-is-block .img-block img{
     max-width: 100%;
+}
+.content-inner-page .what-is-block{
+    padding-top: 50px;
 }
 .reviews-users{
     padding: 70px 0 50px;
@@ -255,6 +290,32 @@ body{
 .get-started{
     padding: 70px 0;
 }
+.bg-upgrade{
+    background: url('../img/bg-upgrade.png') #f4f5f7;
+    background-size: cover;
+}
+.bg-upgrade .content-block{
+    padding: 68px 0 69px;
+    max-width: 520px;
+    color: #495966;
+    font-weight: 300;
+}
+.bg-upgrade .content-block .title-block{
+    font-size: 32px;
+    margin-bottom: 41px;
+}
+.bg-upgrade .content-block .text-block{
+    margin-bottom: 43px;
+    font-size: 18px;
+}
+.bg-upgrade .content-block .price{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.bg-upgrade .content-block .days {
+    margin-bottom: 25px;
+}
 .footer{
     background-color: #0b1925;
     padding: 70px 0;
@@ -292,6 +353,13 @@ body{
 }
 .footer .footer-nav>ul>li:last-child{
     margin-right: 0;
+}
+@media (max-width:1199px){
+    .bg-upgrade {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
 }
 @media (max-width: 991px){
     .what-is-block .img-block{
@@ -334,6 +402,9 @@ body{
     }
     .full-screen-img .secondary-text{
         font-size: 18px;
+    }
+    .bg-upgrade {
+        background: #f4f5f7;
     }
     .footer .top-footer {
         border-bottom: none;
