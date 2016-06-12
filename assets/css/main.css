@@ -376,6 +376,89 @@ body{
     line-height: 2.4;
     margin-bottom: 40px;
 }
+.my-account-page {
+    padding-top: 45px;
+    padding-bottom: 70px;
+}
+.my-account-page .left-menu{
+    padding-top: 87px;
+}
+.my-account-page .left-menu .title{
+    font-size: 24px;
+    color: #495966;
+    margin-bottom: 45px;
+}
+.my-account-page .left-menu ul>li>a{
+    color: #495966;
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: block;
+    border-left: 2px solid transparent;
+}
+.my-account-page .left-menu ul>li>a:hover{
+    color: #02a7e4;
+}
+.my-account-page .left-menu ul>.active>a{
+    border-left: 2px solid #02a7e4;
+    padding-left: 10px;
+    color: #02a7e4;
+}
+.my-account-page .border-block{
+    border-left: 1px solid #e4e2e0;
+}
+.my-account-page .my-account-content{
+    color: #495966;
+    padding-left: 85px;
+}
+.my-account-page .my-account-content .title{
+    font-size: 24px ;
+    margin-bottom: 30px;
+}
+.my-account-page .my-account-content .title hr{
+    border: 1px solid #02a7e4;
+    width: 65px;
+}
+.my-acc-table{
+    font-size: 16px;
+}
+.my-acc-table>thead>tr>th{
+    background-color: #495966;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 23px 15px;
+}
+.my-acc-table>tbody>tr>td{
+    font-weight: 300;
+    padding: 20px 15px;
+    vertical-align: middle;
+}
+.my-acc-table>tbody>tr>.complete{
+    color: #4bbc73;
+    font-weight: 400;
+}
+.my-acc-table>tbody>tr>.pending{
+    color: #bc4b4b;
+    font-weight: 400;
+}
+.my-acc-table>tbody>tr>td .btn-adat{
+    padding:0 40px ;
+    height: 30px;
+}
+.my-account-page .pagination-block .inline-block{
+    margin-right: 0;
+}
+.my-account-page .pagination-block .number-page{
+    margin: 0 30px;
+    color: #7d97ad;
+}
+.my-account-page .pagination-block .btn-adat{
+    height: 30px;
+    width: 30px;
+    padding: inherit;
+    font-size: 18px;
+}
 .footer{
     background-color: #0b1925;
     padding: 70px 0;
