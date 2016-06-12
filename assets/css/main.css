@@ -1,6 +1,12 @@
 /*CUSTOM STYLES*/
+html{
+    position: relative;
+    min-height: 100%;
+}
 body{
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 240px;
+    height: 100%;
 }
 .container {
     position: relative;
@@ -316,10 +322,67 @@ body{
 .bg-upgrade .content-block .days {
     margin-bottom: 25px;
 }
+.breadcrums-block{
+    border-bottom: 1px solid #e4e2e0;
+}
+.breadcrums-block .breadcrumb{
+    padding: 30px 0;
+    background: none;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.breadcrums-block .breadcrumb>li>a{
+    color: #02a7e4;
+    text-decoration: none;
+}
+.breadcrums-block .breadcrumb>.active{
+    color: #495966;
+}
+.breadcrumb>li+li:before{
+    content: ">";
+    padding: 0 10px;
+    color: #495966;
+}
+.content-exam-page{
+    padding:50px 0 70px 0;
+}
+.content-exam-page .title-exam{
+    color: #495966;
+    font-size: 18px;
+    padding-right: 300px;
+}
+.content-exam-page .top-exam-page{
+    position: relative;
+    margin-bottom: 50px;
+}
+.content-exam-page .top-exam-page .exam-duration{
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #02a7e4;
+}
+.content-exam-page .top-exam-page .exam-duration .time{
+    border: 1px solid #02a7e4;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 6px 20px;
+    margin-left: 20px;
+}
+.content-exam-page .content{
+    color: #495966;
+    font-weight: 300;
+    line-height: 2.4;
+    margin-bottom: 40px;
+}
 .footer{
     background-color: #0b1925;
     padding: 70px 0;
     color: #6c6c6c;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .footer .top-footer{
     border-bottom: 1px solid rgba(255,255,255, 0.1);
@@ -367,6 +430,9 @@ body{
     }
 }
 @media (max-width: 767px){
+    body{
+        margin-bottom: 340px;
+    }
     .header .navbar{
         padding-top: 0;
     }
@@ -402,6 +468,9 @@ body{
     }
     .full-screen-img .secondary-text{
         font-size: 18px;
+    }
+    .content-inner-page{
+        padding-top: 62px;
     }
     .bg-upgrade {
         background: #f4f5f7;
