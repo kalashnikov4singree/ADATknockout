@@ -138,6 +138,7 @@ body{
 }
 .header .navbar.active .navbar-collapse{
     border: none;
+    padding-right: 0;
 }
 .header .navbar.active .navbar-brand{
     color: #02a7e4;
@@ -511,6 +512,15 @@ body{
     .what-is-block .img-block{
         display: none;
     }
+    .my-account-page .left-menu{
+        display: none;
+    }
+    .my-account-page .border-block{
+        border: none;
+    }
+    .my-account-page .my-account-content{
+        padding-left: 0;
+    }
 }
 @media (max-width: 767px){
     body{
@@ -535,6 +545,13 @@ body{
     }
     .header .navbar.active .navbar-toggle{
         color: #02a7e4;
+    }
+    .content-exam-page .title-exam{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .content-exam-page .top-exam-page .exam-duration{
+        position: relative;
     }
     .full-screen-img{
         height: auto !important;
