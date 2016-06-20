@@ -848,12 +848,14 @@ body{
         float: none;
     }
     .on-table-btn div button:last-child {
-        margin: 10px 0 0;
+        margin: 10px auto 0;
         float: none;
+        width: 100%;
     }
     .on-table-btn div button {
-        margin: 10px 0 0;
+        margin: 10px auto 0;
         float: none;
+        width: 100%;
     }
     .barry-btn {
         margin: 0 15px 0;
@@ -870,14 +872,5 @@ body{
     .my-time-remining span {
         font-size: 10px;
     }
-    .on-table-btn div button:last-child {
-        margin: 10px auto 0;
-        float: none;
-        width: 100%;
-    }
-    .on-table-btn div button {
-        margin: 10px auto 0;
-        float: none;
-        width: 100%;
-    }
+
 }
