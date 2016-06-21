@@ -690,6 +690,91 @@ body{
 
 /* Biomedical  End */
 
+/* Biomedical Exam Page  Start */
+.on-exam-btn-left {
+
+}
+.on-exam-btn-left button {
+    margin: 0 20px 0 0;
+    background-color: #7bceed;
+    height: 29px;
+}
+.on-exam-btn-left button:last-child {
+    margin: 0;
+    background-color: #02a7e4;
+}
+.on-exam-btn-right {
+    float: right;
+}
+.on-exam-btn-right button {
+    margin: 0 20px 0 0;
+    height: 29px;
+}
+.on-exam-btn-right button:last-child {
+    margin: 0;
+    height: 30px;
+}
+.exam-question {
+    border: 1px solid #e4e2e0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    margin: 0 0 30px 0;
+}
+.exam-question > div {
+    border: 1px solid #e4e2e0;
+    padding: 30px;
+}
+.exam-question-head {
+    background-color: #f5f6f7;
+}
+.exam-question-head h2 {
+    font-weight: 400;
+    color: #495966;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.exam-question-head p {
+    font-weight: 600;
+    color: #02a7e4;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.exam-radio-btn input[type="radio"] { display:none; }
+.exam-radio-btn input[type="radio"] + label {
+    font-weight: 400;
+    color: #495966;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.exam-radio-btn input[type="radio"] + label span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    background: url("../img/radio-btns.png") no-repeat;
+    cursor: pointer;
+}
+.exam-radio-btn input[type="radio"]:checked + label {
+    color: #02a7e4;
+}
+.exam-radio-btn input[type="radio"]:checked + label span {
+    background: url("../img/radio-btns-active.png") no-repeat;
+}
+
+/* Biomedical Exam Page  End */
+
+
 .footer{
     background-color: #0b1925;
     padding: 70px 0;
@@ -750,6 +835,15 @@ body{
     }
     .my-account-page .my-account-content{
         padding-left: 0;
+    }
+    .exam-radio-btn input[type="radio"] + label {
+        font-size: 10px;
+    }
+    .exam-question-head h2 {
+        font-size: 15px;
+    }
+    .exam-question-head p {
+        font-size: 15px;
     }
 }
 @media (max-width: 767px){
@@ -863,6 +957,33 @@ body{
     .triangle-img {
         display: none;
     }
+    .exam-question-head p {
+        font-size: 18px;
+        padding: 20px 0 0;
+        text-align: center;
+    }
+    .exam-question-head h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .exam-radio-btn input[type="radio"] + label {
+        font-size: 13px;
+        text-align: center;
+        line-height: 2;
+    }
+    .on-exam-btn-left button {
+        margin: 0 auto 10px;
+        background-color: #7bceed;
+        width: 100%;
+    }
+    .on-exam-btn-right {
+        float: none;
+    }
+    .on-exam-btn-right button {
+        margin: 10px auto 10px;
+        width: 100%;
+    }
+
 
 }
 @media (max-width: 386px){
