@@ -59,3 +59,25 @@ window.onload = function() {
     })
 }
 });
+
+$(window).ready(function(){
+
+    $(".my-account-bth div button").click(function() {
+        $(".left-menu").toggle(500);
+        $(".my-account-bth div button").toggleClass("btn-active-menu");
+        $(".my-account-page").toggleClass("left-active-menu");
+
+        if ($(".my-account-bth div button").text("Menu")) {
+
+            $(".btn-active-menu").text("close");
+        }
+        else {
+
+            $(".my-account-bth div button").text("Menu");
+        }
+
+
+    });
+});
+
+
