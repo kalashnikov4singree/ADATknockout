@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/includes/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/includes/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/includes/owl.carousel/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="assets/includes/animate/animate.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <nav class="navbar active">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"><b>LOGO</b></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse text-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Practice Tests</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button id="dLabel" class="barry-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Barry McCalvey
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu barry-submenu" aria-labelledby="dLabel">
+                                    <img class="triangle-img" src="assets/img/triangle.png" alt="" />
+                                    <li><a href="#">Account Settings</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav>
+    </div>
+</header>
+<div class="wrapper">
+    <div class="content-inner-page">
+        <div class="breadcrums-block">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">Practice Tests</a></li>
+                    <li><a href="#">Biomedical Sciences</a></li>
+                    <li><a href="#">Exam #1</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li class="active">Results</li>
+                </ol>
+            </div>
+        </div>
+        <div class="container">
+            <div class="my-account-page">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="left-menu left-menu-result">
+                            <div class="title">
+                                My Account
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="active"><a href="#">Practice Tests</a></li>
+                                <li><a href="#">Saved Questions</a></li>
+                                <li><a href="#">Saved Results</a></li>
+                            </ul>
+                            <div class="block-btn">
+                                <button class="btn btn-adat">Upgrade</button>
+                            </div>
+                           <hr/>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Score Report</a></li>
+                                <li><a href="#">Comparitive Histogram</a></li>
+                                <li class="active"><a href="#">Section Breakdown</a></li>
+                                <li><a href="#">Answer Explanations</a></li>
+                            </ul>
+                            <hr/>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Biomedical Sciences</a></li>
+                                <li><a href="#">Clinical Sciences</a></li>
+                                <li class="active"><a href="#">Data Research and Interpretation</a></li>
+                                <li><a href="#">Professional Ethics & Patient Management</a></li>
+                                <li><a href="#">Full Length ADAT Exams</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-10 border-block">
+                        <div class="my-account-content">
+                            <div class="title text-center">
+                                Results
+                                <hr/>
+                            </div>
+                            <div class="title text-center">
+                               Score Report
+                                <hr/>
+                            </div>
+
+                            <div class="content">
+                                <div class="exam-score-report">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                           <h2>Exam Score: 16</h2>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <h2>Percentile: 11</h2>
+                                            <p>You scored better on this test
+                                                than 11% of all test takers.</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <h2>Number Correct: 45/50
+                                                (95%)</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                Comparitive Histogram
+                                <hr/>
+                            </div>
+                            <div class="content">
+                                <div class="exam-res-graf-block">
+                                    <canvas id="canvas"></canvas>
+                                </div>
+                            </div>
+                            <div class="title text-center">
+                                Section Breakdown
+                                <hr/>
+                            </div>
+                            <div class="content">
+
+                            </div>
+                            <div class="title text-center">
+                                Answer Explanations
+                                <hr/>
+                            </div>
+                            <div class="content">
+                                <div class="exam-question-title">
+                                    <h2>Biomedical Sciences</h2>
+                                </div>
+                                <div class="exam-question exam-bottom">
+                                    <div class="exam-question-head exam-explanations">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <h2>12. Exam Question Example</h2>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="block-btn">
+                                                    <button class="btn btn-adat">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose1" name="quality[26]" value="" />
+                                        <label for="choose1"><span></span> A.  Lorem ipsum dolor sit amet, consectetur.</label>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose2" name="quality[26]" value="" />
+                                        <label for="choose2"><span></span> B.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</label>
+                                    </div>
+                                    <div class="exam-radio-btn exam-correct-question">
+                                        <input type="radio" id="choose3"  name="quality[26]" value="" checked="checked" />
+                                        <label for="choose3"><span></span> C.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose4" name="quality[26]" value="" />
+                                        <label for="choose4"><span></span> D.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose5" name="quality[26]" value="" />
+                                        <label for="choose5"><span></span> E.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+                                    </div>
+                                    <div class="exam-radio-text-block exam-correct-question">
+                                        <h4>Correct</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                            omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="exam-question-title">
+                                    <h2>Clinical Sciences</h2>
+                                </div>
+                                <div class="exam-question exam-bottom">
+                                    <div class="exam-question-head exam-explanations">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <h2>12. Exam Question Example</h2>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="block-btn">
+                                                    <button class="btn btn-adat">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exam-radio-btn exam-correct-question">
+                                        <input type="radio" id="choose1" name="quality[27]" value="" />
+                                        <label for="choose1"><span></span> A.  Lorem ipsum dolor sit amet, consectetur. <strong class="correct-active">(Correct Answer)</strong></label>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose2" name="quality[27]" value="" />
+                                        <label for="choose2"><span></span> B.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</label>
+                                    </div>
+                                    <div class="exam-radio-btn exam-incorrect-question">
+                                        <input type="radio" id="choose3"  name="quality[27]" value="" checked="checked" />
+                                        <label for="choose3"><span></span> C.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose4" name="quality[27]" value="" />
+                                        <label for="choose4"><span></span> D.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+                                    </div>
+                                    <div class="exam-radio-btn">
+                                        <input type="radio" id="choose5" name="quality[27]" value="" />
+                                        <label for="choose5"><span></span> E.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</label>
+                                    </div>
+                                    <div class="exam-radio-text-block exam-incorrect-question">
+                                        <h4>Incorrect</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                            omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="logo">
+                            <a href="#"><b>LOGO</b></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-link text-right">
+                            <ul class="list-unstyled">
+                                <li class="inline-block">
+                                    <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="inline-block">
+                                    <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="inline-block">
+                                    <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="row change-pos">
+                    <div class="col-sm-6 copyright-block">
+                        <div class="copyright">
+                            © ADATknockout 2016
+                        </div>
+                    </div>
+                    <div class="col-sm-6 nav-block">
+                        <div class="footer-nav text-right">
+                            <ul class="list-unstyled">
+                                <li class="inline-block">
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li class="inline-block">
+                                    <a href="#"> Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="assets/includes/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/includes/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/includes/chart/chart.bundle.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+        //return 0;
+    };
+    var randomColorFactor = function() {
+        return Math.round(Math.random() * 255);
+    };
+    var randomColor = function(opacity) {
+        return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+    };
+
+    var config = {
+        type: 'line',
+        data: {
+            labels: ["0", "10", "", "20", "", "30", "", "40", "", "50"],
+            datasets: [{
+                label: "one",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "#eefdf6",
+                borderColor: "#4bbc73",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "#4bbc73",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "#4bbc73",
+                pointHoverBorderColor: "#4bbc73",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 50,
+                data: [20, 30, 45, 55, 77, 80, 60, 45, 30, 20, 0],
+
+            }, {
+                hidden: true,
+                label: 'two',
+                data: [20, 30, 45, 55, 77, 80, 60, 45, 30, 20, 0],
+            }, {
+                label: "three",
+                data: [20, 30, 45, 55, 77, 80, 60, 45, 30, 20, 0],
+            }]
+        },
+        options: {
+            responsive: true,
+            title:{
+                display:true,
+                text:''
+            },
+            tooltips: {
+                mode: 'label',
+                callbacks: {
+
+                }
+            },
+            hover: {
+                mode: 'dataset'
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        show: true,
+                        labelString: 'Value'
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        show: false,
+                        labelString: 'Value'
+                    },
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 100,
+                    }
+                }]
+            }
+        }
+    };
+
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx, config);
+    };
+</script>
+</body>
+</html>

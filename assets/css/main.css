@@ -752,7 +752,7 @@ body{
     font-weight: 400;
     color: #495966;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.3;
     margin: 0;
     padding: 0;
 }
@@ -774,7 +774,123 @@ body{
 
 /* Biomedical Exam Page  End */
 
+/*Exam Page Results  Start */
+.my-account-page .left-menu-result div button {
+    padding: 0 20px;
+    height: 29px;
+}
 
+.my-account-page .left-menu-result ul > li > a {
+    height: 17px;
+    margin-bottom: 35px;
+}
+.my-account-page .left-menu hr {
+    border: 1px solid #e4e2e0;
+}
+.exam-score-report {
+    padding: 40px 30px;
+    margin: 40px 0 50px 0;
+    background-color: #f8f8f9;
+    border: 1px solid #e4e2e0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.exam-score-report div {
+    border-left: 1px solid #e4e2e0;
+    height: 70px;
+}
+.exam-score-report div:first-child {
+    border-left: none;
+}
+.exam-score-report h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #495966;
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    text-align: left;
+}
+.exam-score-report p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #495966;
+    padding: 0;
+    margin: 10px 0 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.exam-explanations {
+
+}
+.exam-explanations div button {
+    float: right;
+    height: 29px;
+    padding: 0 20px;
+}
+.exam-question-title {
+
+}
+.exam-question-title h2 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0;
+    line-height: 1;
+    margin: 0 0 30px 0;
+    color: #495966;
+}
+.exam-radio-text-block {
+    padding: 20px;
+ }
+.exam-radio-text-block h4 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    color: #495966;
+}
+.exam-radio-text-block p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    padding: 0;
+    line-height: 2;
+    margin: 0;
+    color: #495966;
+}
+.exam-correct-question {
+    background-color: #eefdf6;
+}
+
+.exam-incorrect-question {
+    background-color: #fdefee;
+}
+.correct-active {
+
+}
+.exam-bottom {
+    margin-bottom: 50px;
+}
+.content:last-child .exam-bottom {
+    margin-bottom: 0;
+}
+.exam-res-graf-block {
+    width: 100%;
+    height: 100%;
+    margin: 50px auto 50px;
+}
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+    /* Exam Page Results  End */
 .footer{
     background-color: #0b1925;
     padding: 70px 0;
@@ -837,13 +953,23 @@ body{
         padding-left: 0;
     }
     .exam-radio-btn input[type="radio"] + label {
-        font-size: 10px;
+        font-size: 12px;
     }
     .exam-question-head h2 {
         font-size: 15px;
     }
     .exam-question-head p {
         font-size: 15px;
+    }
+    .exam-radio-text-block p {
+        font-size: 13px;
+    }
+    .exam-radio-text-block h4 {
+        font-size: 16px;
+    }
+    .exam-question-title h2 {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
 @media (max-width: 767px){
@@ -963,7 +1089,7 @@ body{
         text-align: center;
     }
     .exam-question-head h2 {
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
     .exam-radio-btn input[type="radio"] + label {
@@ -982,6 +1108,30 @@ body{
     .on-exam-btn-right button {
         margin: 10px auto 10px;
         width: 100%;
+    }
+    .exam-explanations div button {
+        float: none;
+        height: 29px;
+        padding: 0 20px;
+        width: 100%;
+        margin: 25px auto 0;
+    }
+    .exam-score-report {
+        padding: 15px 14px;
+    }
+    .exam-score-report div {
+        height: auto;
+        border: none;
+        margin: 10px 0;
+    }
+    .exam-score-report h2 {
+        text-align: center;
+    }
+    .exam-score-report p {
+        text-align: center;
+    }
+    .exam-res-graf-block {
+        margin: 30px auto 30px;
     }
 
 
