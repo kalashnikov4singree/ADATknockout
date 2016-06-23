@@ -8,6 +8,11 @@ body{
     margin-bottom: 240px;
     height: 100%;
 }
+:focus {
+    outline: none!important;
+    outline-offset: 0!important;
+
+}
 .container {
     position: relative;
 }
@@ -963,8 +968,94 @@ canvas {
 .form-btn {
 
 }
-.form-btn div button {
+.form-btn p input {
+    background-color: #02a7e4;
+    border-radius: 2px 3px 3px 2px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    height: 45px;
+    padding: 0 34px;
+    text-transform: uppercase;
+    width: 100%!important;
+    border: none;
+}
+
+.contact-form {
+    padding: 25px 0 0;
+}
+.contact-form-left {
+
+}
+.contact-form-left p {
+    color: #495966;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 29px;
+    position: relative;
+}
+.contact-form-left p input {
+    background-color: #f4f5f7;
+    border: 1px solid #e7e6e5;
+    border-radius: 2px 3px 3px 2px;
+    color: #7d97ad;
+    height: 60px;
+    text-indent: 44px;
     width: 100%;
+}
+.contact-form-right {
+
+}
+.contact-form-right p {
+    color: #495966;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 29px;
+    position: relative;
+}
+.contact-form-right p textarea {
+    background-color: #f4f5f7;
+    border: 1px solid #e7e6e5;
+    border-radius: 2px 3px 3px 2px;
+    color: #7d97ad;
+    height: 240px;
+    padding: 13px 0 0;
+    text-indent: 44px;
+    width: 100%;
+}
+.content-us-page {
+    padding-bottom: 70px;
+    padding-top: 45px;
+}
+.form-submit {
+    width: 100%;
+}
+.form-text  {
+
+}
+.form-text p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #7d97ad;
+    padding: 0;
+    margin: 0;
+}
+.form-text p a {
+    color: #02a7e4;
+    text-decoration: none;
+    font-weight: 600;
+}
+.form-text p a:hover {
+    color: #02a7e4;
+}
+.icon-form {
+    left: 11px;
+    position: absolute;
+    top: 13px;
+}
+.icon-form img {
+    height: 22px;
+    width: 20px;
 }
 
 .footer{
@@ -1253,6 +1344,13 @@ canvas {
     .personal-form-right p button {
         margin: 20px auto 0;
         width: 100%;
+    }
+    .title-custom {
+        line-height: 1.5;
+    }
+    .form-text p {
+        font-size: 13px;
+        text-align: center;
     }
 
 
