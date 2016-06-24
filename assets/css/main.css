@@ -1135,6 +1135,150 @@ canvas {
 .upgrade-text-green button {
     background-color: #4bbc73;
 }
+.payment-menu {
+    border-radius: 2px 3px 3px 2px;
+    border: 1px solid #02a7e4;
+    width: 30%;
+    margin: 0 auto 50px;
+}
+.payment-menu div button {
+    height: 45px;
+    background-color: #fff;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #02a7e4;
+    border-radius: 0;
+    width: 170px;
+    border: none;
+ }
+.payment-menu div button:hover,.payment-menu div button:focus {
+     color: #02a7e4;
+ }
+.active-pay:hover,.active-pay:focus {
+    color: #fff;
+}
+.active-pay {
+    background-color: #02a7e4!important;
+    color: #fff!important;
+}
+.payment-safe {
+    margin: 30px auto 0;
+    width: 100%;
+}
+.payment-safe span {
+    padding: 0 15px 0 0;
+}
+.payment-safe span img {
+    width: 41px;
+    height: 25px;
+}
+.hr-pay hr {
+    color: #e4e2e0;
+}
+.payment-block {
+
+}
+.payment-left {
+
+}
+.payment-left h2 {
+    color: #495966;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+}
+.payment-left p {
+    color: #495966;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+    margin: 25px 0;
+    padding: 0;
+}
+.pay-discount {
+
+}
+.pay-discount p {
+    margin: 30px 0;
+    padding: 0;
+}
+.pay-discount p input {
+    background-color: #fff;
+    border-radius: 2px 3px 3px 2px;
+    height: 50px;
+    text-indent: 15px;
+    color: #495966;
+    font-size: 14px;
+    border: 1px solid #e4e2e0;
+    width: 78%;
+}
+.btn-apply {
+    height: 50px;
+    background-color: #fff;
+    padding: 0 28px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #02a7e4;
+    border-radius: 2px 3px 3px 2px;
+    float: right;
+    border: 1px solid #02a7e4;
+}
+.btn-apply:hover,.btn-apply:focus {
+    color: #fff;
+    background-color: #02a7e4;
+}
+
+.pay-total {
+
+}
+.pay-total p {
+    color: #02a7e4;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.pay-total p span {
+
+}
+.pay-total p span:last-child {
+    float: right;
+}
+
+.payment-right {
+
+}
+.paypal-logo {
+    width: 180px;
+    margin: 40px auto 0;
+}
+.check-paypal {
+    width: 40%;
+    margin: 40px auto 0;
+}
+.check-paypal button {
+    height: 45px;
+    background-color: #eeeeee;
+    padding: 0 17px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333333;
+    border-radius: 2px 3px 3px 2px;
+    border: 1px solid #cfcfcf;
+}
+.check-paypal button:hover,.check-paypal button:focus {
+    color: #333333;
+}
+.check-paypal button span {
+    padding: 0 0 0 10px;
+}
+.check-paypal button span img {
+        width: 80px;
+}
 /*  New Style  */
 
 .footer{
@@ -1190,6 +1334,12 @@ canvas {
     .personal-form-left p label {
         font-size: 13px;
     }
+    .payment-menu div button {
+        width: 149.3px;
+    }
+    .payment-menu {
+        width: 32%;
+    }
 }
 @media (max-width: 991px){
     .what-is-block .img-block{
@@ -1223,6 +1373,15 @@ canvas {
     .my-account-page .left-menu {
         padding-top: 0;
         padding-bottom: 40px;
+    }
+    .payment-menu div button {
+        width: 132px;
+    }
+    .payment-menu {
+        width: 37%;
+    }
+    .pay-discount p input {
+        width: 68%;
     }
 }
 @media (max-width: 767px){
@@ -1447,6 +1606,28 @@ canvas {
         font-size: 15px;
         line-height: 2;
         width: 65%;
+    }
+    .payment-menu div button {
+        width: 50%;
+    }
+    .payment-menu {
+        width: 100%;
+    }
+    .btn-apply {
+        float: none;
+        margin: 20px 0 0;
+    }
+    .pay-discount p input {
+        width: 100%;
+    }
+    .payment-right {
+        padding: 55px 0 0;
+    }
+    .check-paypal {
+        width: 100%;
+    }
+    .check-paypal button {
+        width: 100%;
     }
 
 
