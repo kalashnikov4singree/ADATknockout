@@ -80,4 +80,25 @@ $(window).ready(function(){
     });
 });
 
+$(window).ready(function(){
 
+    $(".collapsed").click(function(e) {
+
+        e.preventDefault();
+
+        $(".accordion-active").toggle(500);
+
+        $('.collapsed').toggleClass('btn-active-accordion');
+
+        if ($(".collapsed").html("<img src='assets/img/accordion-arrow.png'  />")) {
+
+            $(".btn-active-accordion").html("<img src='assets/img/accordion-arrow-active.png'  />")
+        }
+        else {
+
+            $(".collapsed").html("<img src='assets/img/accordion-arrow.png'  />")
+        }
+
+
+    });
+});

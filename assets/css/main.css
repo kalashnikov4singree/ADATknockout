@@ -1058,6 +1058,85 @@ canvas {
     width: 20px;
 }
 
+
+/*  New Style  */
+
+.accordion-block {
+
+}
+.accordion-text {
+    border-top: 1px solid #e4e2e0;
+    padding: 40px 64px;
+}
+.accordion-text:last-child {
+    border-bottom: 1px solid #e4e2e0;
+}
+.accordion-text span {
+
+}
+.accordion-text span:first-child {
+    font-size: 24px;
+    font-weight: 600;
+    color: #02a7e4;
+}
+.accordion-text span:nth-child(2){
+    float: right;
+}
+.accordion-active {
+    display: none;
+}
+.accordion-active p {
+    margin: 40px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2;
+    color: #495966;
+}
+.test-block {
+    background-color: #f4f5f7;
+    border: 1px solid #e7e6e5;
+    border-radius: 2px 3px 3px 2px;
+    padding: 15px 20px 15px 15px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+.test-block:last-child {
+    margin: 0 auto;
+}
+.test-block p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #495966;
+    line-height: 1.3;
+}
+.test-block  button {
+    height: 29px;
+    padding: 0 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.m-content {
+    margin-top: 50px;
+}
+.upgrade-text p {
+     opacity: 0.5;
+ }
+.upgrade-text-op p {
+    opacity: 0.5;
+}
+.upgrade-text-op button {
+    opacity: 0.5;
+}
+.upgrade-text-green p {
+    opacity: 0.5;
+}
+.upgrade-text-green button {
+    background-color: #4bbc73;
+}
+/*  New Style  */
+
 .footer{
     background-color: #0b1925;
     padding: 70px 0;
@@ -1351,6 +1430,23 @@ canvas {
     .form-text p {
         font-size: 13px;
         text-align: center;
+    }
+    .accordion-text {
+
+        padding: 40px 20px;
+    }
+    .accordion-text span:first-child {
+        font-size: 17px;
+    }
+    .test-block button {
+        top: 20px;
+        right: 20px;
+    }
+    .test-block p {
+        text-align: left;
+        font-size: 15px;
+        line-height: 2;
+        width: 65%;
     }
 
 
