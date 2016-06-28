@@ -1057,7 +1057,210 @@ canvas {
     height: 22px;
     width: 20px;
 }
+.icon-star {
+    left: 11px;
+    position: absolute;
+    top: 13px;
+}
+.icon-star img {
+    height: 22px;
+    width: 23px;
+}
+.login_form {
+    width: 50%;
+    margin: 0 auto;
+}
+.login_form p {
+    color: #495966;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 29px;
+    position: relative;
+}
+.login_form p input {
+    background-color: #f4f5f7;
+    border: 1px solid #e7e6e5;
+    border-radius: 2px 3px 3px 2px;
+    color: #495966;
+    height: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    text-indent: 44px;
+    width: 100%;
+}
+.login-text p {
+    padding: 29px 0 0;
+}
+.login-signed-in {
+    margin-bottom: 29px;
+}
+.login-signed-in label {
+    color: #7d97ad;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.forgot-pass {
+    float: right;
+}
+.forgot-pass a {
+    color: #02a7e4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.forgot-pass a:hover {
+    color: #02a7e4;
+}
 
+.star-rating{
+    font-size: 0;
+}
+.star-rating__wrap{
+    display: inline-block;
+    font-size: 1rem;
+}
+.star-rating__wrap:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.star-rating__ico{
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #bde6f7;
+}
+.star-rating__ico:last-child{
+    padding-left: 0;
+}
+.star-rating__input{
+    display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+    content: "\f005";
+    color: #1ca6df;
+}
+.fa-star-o:before {
+    font-size: 25px;
+    position: relative;
+    top: 12px;
+    left: 16px;
+}
+.success-btn {
+    width: 50%;
+    margin: 0 auto;
+}
+.success-btn div button {
+    width: 100%;
+}
+.info-page {
+    padding: 26px 0 0;
+}
+.info-text {
+    margin: 0 0 38px 0;
+}
+.info-text h3 {
+    color: #02a7e4;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+.info-text p {
+    color: #495966;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2;
+}
+.info-text:last-child {
+    margin: 0;
+}
+.order-detail-form {
+    padding-top: 20px;
+}
+.order-detail-form-left {
+
+}
+.order-detail-form-right {
+
+}
+.order-detail-form-left p {
+    margin: 0 0 55px;
+}
+.order-detail-form-left p:nth-child(4) {
+    padding: 0 0 100px 0;
+}
+.order-detail-form-left p label {
+    color: #495966;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.order-detail-form-right p label {
+    color: #495966;
+    font-size: 16px;
+    font-weight: 300;
+}
+.order-detail-form-right p {
+    color: #7d97ad;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 29px;
+}
+.order-detail-form-right p input {
+    background-color: #f4f5f7;
+    border: 1px solid #e7e6e5;
+    border-radius: 2px 3px 3px 2px;
+    color: #7d97ad;
+    height: 60px;
+    text-indent: 10px;
+    width: 100%;
+}
+.order-detail-form-right p textarea {
+    background-color: #f4f5f7;
+    border: 1px solid #e7e6e5;
+    border-radius: 2px 3px 3px 2px;
+    color: #7d97ad;
+    height: 140px;
+    padding: 13px 10px 0px;
+    width: 100%;
+}
+.red {
+
+}
+.red::-webkit-input-placeholder {color: #bc4b4b;}
+.red::-moz-placeholder          {ccolor: #bc4b4b;}
+.red::-moz-placeholder           {color: #bc4b4b;}
+.red:-ms-input-placeholder      {color: #bc4b4b;}
+.open-attachment {
+
+}
+.open-attachment p {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.open-attachment a {
+    color: #02a7e4;
+    font-weight: 600;
+    font-size: 14px;
+}
+.icon-order {
+    padding: 0 9px 0 0;
+}
+.icon-order img {
+    height: 15px;
+    width: 15px;
+}
 
 /*  New Style  */
 
@@ -1374,6 +1577,15 @@ canvas {
         padding-top: 0;
         padding-bottom: 40px;
     }
+    .login_form {
+        width: 80%;
+    }
+    .success-btn {
+        width: 80%;
+    }
+    .order-detail-form-right p {
+        font-size: 13px;
+    }
     .payment-menu div button {
         width: 132px;
     }
@@ -1589,6 +1801,24 @@ canvas {
     .form-text p {
         font-size: 13px;
         text-align: center;
+    }
+    .login_form {
+        width: 100%;
+    }
+    .success-btn {
+        width: 100%;
+    }
+    .info-text h3 {
+        text-align: center;
+    }
+    .info-text p {
+        text-align: center;
+    }
+    .order-detail-form-left {
+        display: none;
+    }
+    .order-detail-form-right p {
+        font-size: 13px;
     }
     .accordion-text {
 
