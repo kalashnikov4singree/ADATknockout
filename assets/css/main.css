@@ -192,6 +192,7 @@ body{
 }
 .header .navbar.active .nav .btn-authorize>a:hover{
     color: #fff;
+    opacity: 0.8;
 }
 .header .navbar  .nav .btn-authorize>a.sing-active {
     background-color: #02a7e4;
