@@ -431,7 +431,7 @@
         var windowHeight = $(window).height();
         if (windowHeight > 768){
             $(window).on("scroll", function() {
-                if($(window).scrollTop() > 500) {
+                if($(window).scrollTop() > 20) {
                     $(".header .navbar").addClass("active slideInDown");
                 } else {
                     //remove the background property so it comes transparent again (defined in your css)

@@ -19,12 +19,13 @@ body{
 .btn-adat{
     height: 45px;
     background-color: #02a7e4;
-    border-radius: 2px 3px 3px 2px;
+    border-radius: 3px;
     padding: 0 34px;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
+    letter-spacing: 1px;
 }
 .btn-adat:hover,.btn-adat:focus {
     color: #fff;
@@ -32,12 +33,13 @@ body{
 .btn-adat-red {
     height: 30px;
     background-color: #bc4b4b;
-    border-radius: 2px 3px 3px 2px;
+    border-radius: 3px;
     padding: 0 34px;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
+    letter-spacing: 1px;
 }
 .btn-adat-red:hover,.btn-adat-red:focus {
     color: #fff;
@@ -45,12 +47,13 @@ body{
 .btn-adat-green {
     height: 30px;
     background-color: #4bbc73;
-    border-radius: 2px 3px 3px 2px;
+    border-radius: 3px;
     padding: 0 34px;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
+    letter-spacing: 1px;
 }
 .btn-adat-green:hover,.btn-adat-green:focus {
     color: #fff;
@@ -150,16 +153,20 @@ body{
     height: 45px;
     width:107px;
     border: 1px solid white;
-    border-radius: 3px 2px 2px 3px;
+    border-radius: 3px;
     padding: 10px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .header .navbar  .nav .btn-authorize>a:hover{
     background-color: #02a7e4;
     border-color: #02a7e4;
     color: #fff;
 }
-/*Active Header*/
+.btn:hover {
+    opacity: 0.8;
+}
+    /*Active Header*/
 .header .navbar.active{
     background-color: white;
     box-shadow: 0 2px 5px rgba(24, 24, 25, 0.15);
@@ -184,7 +191,11 @@ body{
 .header .navbar.active .nav .btn-authorize>a:hover{
     color: #fff;
 }
-
+.header .navbar  .nav .btn-authorize>a.sing-active {
+    background-color: #02a7e4;
+    border-color: #02a7e4;
+    color: #fff;
+}
 .full-screen-img{
     background: url('../img/bg-img.jpg');
     background-size: cover;
@@ -970,7 +981,7 @@ canvas {
 }
 .form-btn p input {
     background-color: #02a7e4;
-    border-radius: 2px 3px 3px 2px;
+    border-radius: 3px;
     color: #fff;
     font-size: 12px;
     font-weight: 600;
@@ -979,6 +990,7 @@ canvas {
     text-transform: uppercase;
     width: 100%!important;
     border: none;
+    letter-spacing: 1px;
 }
 
 .contact-form {
@@ -1425,9 +1437,10 @@ canvas {
     font-weight: 600;
     text-transform: uppercase;
     color: #02a7e4;
-    border-radius: 2px 3px 3px 2px;
+    border-radius: 3px;
     float: right;
     border: 1px solid #02a7e4;
+    letter-spacing: 1px;
 }
 .btn-apply:hover,.btn-apply:focus {
     color: #fff;
@@ -1913,6 +1926,9 @@ canvas {
     }
     .accordion-arrow::before {
         font: 18px/1 FontAwesome;
+    }
+    .social-link {
+        text-align: center;
     }
 
 

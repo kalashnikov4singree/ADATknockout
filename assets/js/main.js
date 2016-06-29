@@ -79,4 +79,6 @@ $(window).ready(function(){
 
     });
 });
-
+$(window).ready(function(){
+        $(".btn-authorize:last-child a").addClass("sing-active");
+});
