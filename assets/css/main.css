@@ -1482,6 +1482,27 @@ canvas {
 .check-paypal button span img {
         width: 80px;
 }
+.link-accordion {
+    text-decoration: none;
+}
+.link-accordion:hover {
+    text-decoration: none;
+}
+.link-accordion:focus {
+    text-decoration: none;
+}
+.collapsed .accordion-arrow::before {
+     color: #02a7e4;
+     position: relative;
+     content: "\f078";
+     font: 25px/1 FontAwesome;
+ }
+.accordion-arrow::before {
+    color: #02a7e4;
+    position: relative;
+    content: "\f077";
+    font: 25px/1 FontAwesome;
+}
 /*  New Style  */
 
 .footer{
@@ -1858,6 +1879,12 @@ canvas {
     }
     .check-paypal button {
         width: 100%;
+    }
+    .collapsed .accordion-arrow::before {
+        font: 18px/1 FontAwesome;
+    }
+    .accordion-arrow::before {
+        font: 18px/1 FontAwesome;
     }
 
 
