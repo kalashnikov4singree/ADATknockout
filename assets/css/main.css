@@ -1671,14 +1671,18 @@ canvas {
         font-size: 24px;
     }
     .header .navbar .navbar-collapse{
-        text-align: left;
+        text-align: center;
+        overflow: hidden;
     }
     .header .navbar  .nav>li{
         display: block;
+        text-align: center;
     }
     .header .navbar  .nav .btn-authorize{
-        float: left;
+        width: 90%;
+        margin: 15px auto 0;
     }
+
     .header .navbar.active .navbar-toggle{
         color: #02a7e4;
     }
@@ -1729,6 +1733,7 @@ canvas {
     }
     .full-screen-img .secondary-text{
         font-size: 18px;
+        line-height: 1.5;
     }
     .content-inner-page{
         padding-top: 62px;
@@ -1929,6 +1934,15 @@ canvas {
     }
     .social-link {
         text-align: center;
+    }
+    .header .navbar .nav .btn-authorize>a {
+        width: 95%;
+    }
+    .navbar-header .navbar-toggle i::before {
+        content: "\f00d";
+    }
+    .navbar-header .collapsed i::before {
+        content: "\f0c9";
     }
 
 
