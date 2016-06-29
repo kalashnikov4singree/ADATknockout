@@ -1944,6 +1944,12 @@ canvas {
     .navbar-header .collapsed i::before {
         content: "\f0c9";
     }
+    .barry-submenu li {
+        text-align: center;
+    }
+    .barry-submenu li a {
+        padding: 6px 0 0!important;
+    }
 
 
 }
