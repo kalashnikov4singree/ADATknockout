@@ -801,7 +801,7 @@ body{
 }
 
 .my-account-page .left-menu-result ul > li > a {
-    height: 17px;
+    height: 20px;
     margin-bottom: 35px;
 }
 .my-account-page .left-menu hr {
@@ -1583,6 +1583,12 @@ canvas {
     .payment-menu {
         width: 32%;
     }
+    .barry-submenu {
+        margin: 15px auto 0;
+        /* right: 19px; */
+        left: -20px;
+        /* float: none; */
+    }
 }
 @media (max-width: 991px){
     .what-is-block .img-block{
@@ -1663,6 +1669,13 @@ canvas {
     .container {
         width: 100%;
     }
+    .barry-submenu {
+        margin: 15px auto 0;
+        /* right: 19px; */
+        left: -40px;
+        /* float: none; */
+    }
+
 }
 @media (max-width: 767px){
     body{
