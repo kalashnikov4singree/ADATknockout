@@ -464,6 +464,7 @@ body{
 .my-account-page .my-account-content .title hr{
     border: 1px solid #02a7e4;
     width: 65px;
+    margin-top: 10px;
 }
 .my-acc-table{
     font-size: 16px;
@@ -680,6 +681,7 @@ body{
 .barry-submenu {
     border: 1px solid #e4e2e0;
     margin: 15px 0 0 0;
+    border: 1px solid rgba(0, 0, 0, .15);
 }
 .barry-submenu li {
     margin: 5px 0 0;
@@ -742,12 +744,18 @@ body{
     -khtml-border-radius: 5px;
     margin: 0 0 30px 0;
 }
+.exam-question-head {
+    background-color: #f5f6f7;
+}
+.exam-question > div:first-child {
+    border: 1px solid #e4e2e0;
+    padding: 30px;
+    background-color: #f5f6f7;
+}
 .exam-question > div {
     border: 1px solid #e4e2e0;
     padding: 30px;
-}
-.exam-question-head {
-    background-color: #f5f6f7;
+    background-color: #fff;
 }
 .exam-question-head h2 {
     font-weight: 400;
@@ -801,8 +809,13 @@ body{
 }
 
 .my-account-page .left-menu-result ul > li > a {
-    height: 20px;
-    margin-bottom: 35px;
+
+}
+.exam-correct-question label strong {
+    font-weight: 400;
+}
+.exam-incorrect-question label strong {
+    font-weight: 400;
 }
 .my-account-page .left-menu hr {
     border: 1px solid #e4e2e0;
@@ -1210,9 +1223,10 @@ canvas {
 }
 .order-detail-form-left p {
     margin: 0 0 55px;
+    text-align: right;
 }
 .order-detail-form-left p:nth-child(4) {
-    padding: 0 0 100px 0;
+    padding: 0 0 65px 0;
 }
 .order-detail-form-left p label {
     color: #495966;
@@ -1252,10 +1266,10 @@ canvas {
 .red {
 
 }
-.red::-webkit-input-placeholder {color: #bc4b4b;}
-.red::-moz-placeholder          {ccolor: #bc4b4b;}
-.red::-moz-placeholder           {color: #bc4b4b;}
-.red:-ms-input-placeholder      {color: #bc4b4b;}
+.red input::-webkit-input-placeholder {color: #bc4b4b;}
+.red input::-moz-placeholder          {ccolor: #bc4b4b;}
+.red input:-moz-placeholder           {color: #bc4b4b;}
+.red input:-ms-input-placeholder      {color: #bc4b4b;}
 .open-attachment {
 
 }
@@ -1519,6 +1533,9 @@ canvas {
     content: "\f077";
     font: 25px/1 FontAwesome;
 }
+.my-privacy-page {
+    color: #495966;
+}
 /*  New Style  */
 
 .footer{
@@ -1572,7 +1589,7 @@ canvas {
 @media (max-width:1199px){
 
     .personal-form-right p input {
-        width: 73%;
+        width: 72%;
     }
     .personal-form-left p label {
         font-size: 13px;
@@ -1618,6 +1635,7 @@ canvas {
     .exam-question-title h2 {
         font-size: 16px;
         line-height: 1.5;
+        text-align: center;
     }
     .my-account-page .left-menu {
         padding-top: 0;
@@ -1636,7 +1654,7 @@ canvas {
         width: 132px;
     }
     .payment-menu {
-        width: 37%;
+        width: 266px;
     }
     .pay-discount p input {
         width: 68%;
@@ -1675,11 +1693,23 @@ canvas {
         left: -40px;
         /* float: none; */
     }
+    .personal-form-right p input {
+        width: 73%;
+    }
+    .form-btn p input {
+        width: 95%!important;
+    }
+    .on-table-btn div button {
+        margin: 0 9px 0 0;
+    }
 
 }
 @media (max-width: 767px){
     body{
         margin-bottom: 340px;
+    }
+    .form-btn p input {
+        width: 100%!important;
     }
     .header .navbar{
         padding-top: 0;
@@ -1801,6 +1831,16 @@ canvas {
     }
     .my-time-remining {
         float: none;
+        text-align: center;
+    }
+    .text-bl-left h1 {
+        text-align: center;
+    }
+    .text-bl-left {
+        margin: 50px 0 0;
+    }
+    .text-bl-right {
+        margin: 40px 0;
     }
     .on-table-btn div button:last-child {
         margin: 10px auto 0;
@@ -1968,6 +2008,9 @@ canvas {
     }
     .barry-submenu li a {
         padding: 6px 0 0!important;
+    }
+    .exam-question-title h2 {
+        text-align: center;
     }
 
 

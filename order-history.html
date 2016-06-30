@@ -31,8 +31,19 @@
                         <li><a href="#">Practice Tests</a></li>
                         <li><a href="#">FAQ's</a></li>
                         <li><a href="#">Contact Us</a></li>
-                        <li class="btn-authorize text-center"><a href="#">Login</a></li>
-                        <li class="btn-authorize  text-center"><a href="#">Sign Up</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button id="dLabel" class="barry-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Barry McCalvey
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu barry-submenu" aria-labelledby="dLabel">
+                                    <img class="triangle-img" src="assets/img/triangle.png" alt="" />
+                                    <li><a href="#">Account Settings</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
@@ -52,7 +63,7 @@
             <div class="my-account-page">
                 <div class="row">
                     <div class="col-md-2">
-                        <div class="left-menu">
+                        <div class="left-menu left-menu-result">
                             <div class="title">
                                 My Account
                             </div>
@@ -60,6 +71,9 @@
                                 <li><a href="#">Personal Information</a></li>
                                 <li class="active"><a href="#">Order History</a></li>
                             </ul>
+                            <div class="block-btn">
+                                <button class="btn btn-adat">Upgrade</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-10 border-block">
