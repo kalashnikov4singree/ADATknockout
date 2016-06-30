@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title></title>
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/includes/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/includes/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/includes/owl.carousel/assets/owl.carousel.css"/>
     <link rel="stylesheet" href="assets/includes/animate/animate.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
+
 </head>
 <body>
 
@@ -313,7 +315,28 @@
 <script src="assets/includes/chart/chart.bundle.js"></script>
 
 
+<script>
 
+   $(document).ready(function(){
+        var j = jQuery.noConflict();
+        j(".my-account-bth div button").click(function() {
+            j(".left-menu").toggle(500);
+            j(".my-account-bth div button").toggleClass("btn-active-menu");
+            j(".my-account-page").toggleClass("left-active-menu");
+
+            if (j(".my-account-bth div button").text("Menu")) {
+
+                j(".btn-active-menu").text("close");
+            }
+            else {
+
+                j(".my-account-bth div button").text("Menu");
+            }
+
+
+        });
+    });
+</script>
 
 
 <script>
